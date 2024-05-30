@@ -1,8 +1,8 @@
 //your JS code here. If required.
 function validateInput() {
 	event.preventDefault();
-	let name = document.getElementById("input_name").value;
-	let age = parseInt(document.getElementById("input_age").value);
+	let name = document.getElementById("name").value;
+	let age = parseInt(document.getElementById("age").value);
 	if(name == "" || age =="")
 	{
 		document.getElementById("p_id").style.display="block";
@@ -30,4 +30,4 @@ function validateInput() {
 }
 
 
-document.getElementById("btn").addEventListener("click", validateInput);
+document.getElementById("myForm").addEventListener("submit", validateInput);
